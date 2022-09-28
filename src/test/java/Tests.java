@@ -26,7 +26,8 @@ public class Tests {
                     if (f.getName().contains("json")) continue;
                     FileWriter fileWritter = new FileWriter("README.md", true);
                     BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
-                    bufferWritter.write("![输入图片说明](" + f + " \"在这里输入图片标题\")" + "\n");
+                    String substring = f.toString().substring(f.getPath().lastIndexOf("/") + 1);
+                    bufferWritter.write("![" + substring + "](" + f + " \"" + substring + "\")" + "\n");
                     bufferWritter.close();
                 }
             }
