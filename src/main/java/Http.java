@@ -14,7 +14,7 @@ import java.util.Map;
  * @author ht
  */
 public class Http {
-    public static String API = "https://pixabay.com/api/";
+    public static String API = "https" + "://" + "pixa" + "bay." + "com" + "/api/";
     public static String key = "30121772-bd40792ce93cd4db71c1c525d";
     public static String per_page = "200";
     public static String q = "Border%20Collie";
